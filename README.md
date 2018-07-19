@@ -20,6 +20,34 @@ An **Exit relay** is the final relay that Tor traffic passes through before it r
 
 **Bridges** are Tor relays which are not publicly listed as part of the Tor network. Bridges are essential censorship-circumvention tools in countries that regularly block the IP addresses of all publicly listed Tor relays, such as China. A bridge is generally safe to run in your home, in conjunction with other services, or on a computer with your personal files.
 
+## Setup
+
+This repository will guide you to setup your own mini TOR Relay (for the shake of the good feeling that you contributed to the TOR network). The steps are very simple and prerequisites are given below.
+
+### Prerequisites
+
+1. Good Internet speed.
+
+2. VM or Baremetal having Ubuntu (or any of your favorite linux flavor) installed.(Xenial - 16.04 will be appreciated)
+
+3. Good Vibes ;)
+
+### Steps
+
+Go to the following lines in the **Sample Relay Script** and modify the code as per your need.
+
+```bash
+...
+Nickname atlas
+ContactInfo waydownwego(at)gmail(dot)com [tor-relay.co]
+DirPort 9030
+ExitPolicy reject *:*
+RelayBandwidthRate 10 MBits
+RelayBandwidthBurst 10 MBits
+DisableDebuggerAttachment 0
+ControlPort 9051
+...
+```
 
 ## Authors
 
@@ -27,4 +55,3 @@ An **Exit relay** is the final relay that Tor traffic passes through before it r
 
 Visit my blog for more Tech Stuff
 ### http://www.prashplus.com
-
