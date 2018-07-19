@@ -34,7 +34,7 @@ This repository will guide you to setup your own mini TOR Relay (for the shake o
 
 ### Steps
 
-Go to the following lines in the **Sample Relay Script** and modify the code as per your need.
+1. For Relay Node setup. Go to the following lines in the **Relay Sample Script** and modify the code as per your need.
 
 ```bash
 ...
@@ -48,6 +48,23 @@ DisableDebuggerAttachment 0
 ControlPort 9051
 ...
 ```
+
+2. For Bridge Node setup. Go to the following lines in the **Bridge Sample Script** and modify the code as per your need.
+
+3. For Relay Node setup. Go to the following lines in the **Exit Node Sample Script** and modify the code as per your need.
+
+## Monitoring
+
+To monitor your node start arm with the following command
+
+```bash
+sudo -u debian-tor arm
+```
+
+Refered from:
+
+### https://tor-relay.co/
+
 
 ## Authors
 
